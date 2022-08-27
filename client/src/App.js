@@ -38,9 +38,7 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    
-    // TODO: Insert the Appllo Provider and also the closing tag at the end 
-    
+    <ApolloProvider client={client}>
       <Router>
         <>
           <Navbar />
@@ -60,7 +58,7 @@ function App() {
           </Routes>
         </>
       </Router>
-
+    </ApolloProvider>
 
   );
 }
